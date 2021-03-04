@@ -1,0 +1,7 @@
+<li [ngClass]="{ 'list-group-item': true, 
+					 'list-group-item-success': RedOrGreen()=== 'green',
+					 'list-group-item-danger': RedOrGreen() === 'red' }">
+	<h4 [ngStyle]="{color: getColor()}"> {{ capteurName }} : {{ getCapteurValue() }}</h4>
+</li>
+
+

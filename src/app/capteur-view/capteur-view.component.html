@@ -1,0 +1,17 @@
+<div class="col-lg-10 offset-1">
+    <h1>Capteurs</h1>
+    <ul class="list-group">
+        <app-capteurs *ngFor="let capteur of capteurs"
+                      [capteurName] = "capteur.name"
+                      [capteurValue] = "capteur.value">
+        </app-capteurs>            
+    </ul>
+    <h1>Actionneurs</h1>
+    <ul class="list-group">
+      	<app-actionneurs *ngFor="let actionneur of actionneurs"
+      					 [actionneurName] = "actionneur.name"
+      					 [actionneurValue] = "actionneur.value"
+      					 [actionneurID] = "actionneur.id">
+      	</app-actionneurs>
+      </ul>
+</div>
